@@ -1,0 +1,35 @@
+<%- include('./partials/header.ejs') %>
+<body>
+
+    <%- include('./partials/navbar.ejs') %>
+
+
+<div class="flex-corpo">
+<div>Jogos</div>
+<div class="tamanho-corpo growth-corpo">Ranking</div>
+</div>
+<div class="flex-footer">
+<div>
+    <h1>Meu nome:<%= nome%></h1>
+
+    <%if (aname.length > 2 ) {%>
+        <h1>Seu nome:<%= aname%></h1>
+    <%}%>    
+
+
+    <% notas.forEach(function(nota){ %>
+        <br>
+       <%= nota %> 
+        
+    <%})%>
+
+</div>
+<div>8</div>
+<div>9</div>
+
+</div>
+
+</div>
+</body>
+</html>
+

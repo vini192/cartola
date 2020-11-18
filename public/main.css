@@ -1,0 +1,110 @@
+    *{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    html {
+    width: 100%
+    }
+    body {
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    }
+    
+    .flex-body {
+    display: flex;
+    flex-direction: column;
+    
+    }
+    
+    div {
+    margin: 5 px;
+    }
+    
+    .flex-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background: orange;
+    margin-bottom: 1px;
+    
+    }
+    .flex-header div {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    }
+    
+    
+    
+    
+    
+    .flex-corpo{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    background:#49AFFB;
+    }
+    .flex-corpo div{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: solid 1px black;
+    }
+
+
+    
+    .flex-footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background: orange;
+    box-sizing: border-box;
+    }
+    
+    .flex-footer div{
+    height: 100%;
+    width: 100%;
+    border: solid 1px black;
+    background: white;
+    
+    }
+    
+    .flex-header h3{
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+        margin-top: 3%;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        flex-grow: 3;
+    }
+    .flex-header span{
+        color: black;
+    }
+    
+    .flex-header img{
+        width: 12%;
+        margin: 1%;
+        
+    }
+
+    .flex-jogos{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .imagem-direita{
+        text-align: right;
+        margin-right: 1%
+    }
+    
+    .growth-corpo {
+        flex-grow: 1;
+    }

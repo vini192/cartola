@@ -1,0 +1,81 @@
+<%- include('./partials/header.ejs') %>
+
+<body>
+
+    <%- include('./partials/navbar.ejs') %>
+
+
+<div class="flex-corpo">
+
+
+
+
+    <div class="flex-jogos">
+
+        <div>Jogos</div>
+
+
+        <div>
+            <h3>Criar Jogos</h3>
+            <br>
+            <h4>Time 1   | Time 2</h4>
+            <form method="POST" action="/salvarjogo">
+                <input type="text" placeholder="Time 1" name="timeum">
+                <input type="text" placeholder="Time 2" name="timedois">
+                <button>Criar</button>
+            </form>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="flex-jogos">
+        <div>Ranking</div>
+
+
+       <div>
+            
+                <form method="POST" action="/salvarresultado" id="formresultado">
+                    <% jogo.forEach(jogos =>{  %>
+                        <%if (jogos.jogo == '1'){%>
+
+                        <p><%= jogos.timecasa %> X <%= jogos.timefora %></p>
+                        <input type='radio' name="resultado<%=jogos.id%>" value="C">C 
+                        <input type='radio' name="resultado<%=jogos.id%>" value="E"> E 
+                        <input type='radio' name="resultado<%=jogos.id%>" value="F"> F 
+                        <%}%>
+                        
+                    <%  }) %><br>
+
+                    <button type="submit">Apostar</button>
+            </form>
+           
+            
+           
+            
+        </div> 
+
+    </div>
+
+
+</div>
+
+
+
+
+<div class="flex-footer">
+<div>7</div>
+<div>8</div>
+<div>9</div>
+
+</div>
+
+</div>
+</body>
+</html>
+
